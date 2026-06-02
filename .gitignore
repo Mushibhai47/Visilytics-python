@@ -1,0 +1,50 @@
+# Model files (too large)
+*.pt
+FinalModel.pt
+
+# Media files
+*.avi
+*.mp4
+*.png
+*.jpg
+*.jpeg
+
+# Logs
+log.txt
+log_backup.txt
+*.log
+
+# Output folders
+image-output/
+video/
+image_backup/
+
+# Temp files
+temp_*.jpg
+temp_*.png
+temp_person_*.jpg
+temp_score_*.jpg
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+venv/
+.env
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Old developer code (not our work)
+webAPI.py
+script.py
+resize.py
+webHandler.py
+live_detection_v3.py
+live_detection_v32.py
+person_tracker_v2.py
+processing_handler_v2.py
+*.py.bak

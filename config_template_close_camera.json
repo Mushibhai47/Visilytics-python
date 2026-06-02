@@ -1,0 +1,39 @@
+{
+  "_comment": "Template for cameras VERY CLOSE to entrance (like Woodbridge, Fred)",
+  "store_info": {
+    "store_name": "STORE_NAME",
+    "client_code": "CLIENT_CODE",
+    "company_id": "COMPANY_ID",
+    "store_id": "STORE_ID"
+  },
+  "cameras": [
+    {
+      "camera_id": "CAMERA_ID",
+      "camera_name": "Close Camera Name",
+      "rtsp_url": "rtsp://admin:PASSWORD@IP_ADDRESS:PORT",
+      "enabled": true,
+      "roi": {
+        "start_width": 0.1,
+        "end_width": 0.9,
+        "start_height": 0.2,
+        "end_height": 0.8
+      },
+      "door_detection": {
+        "door_sx_ratio": 0.0,
+        "door_ex_ratio": 1.0,
+        "door_sy_ratio": 0.35,
+        "door_ey_ratio": 0.8,
+        "threshold_open_door": 50,
+        "threshold_opened_pixels": 800,
+        "check_door_duration": 1,
+        "invert_door_threshold": false
+      }
+    }
+  ],
+  "processing": {
+    "yolo_model_path": "FinalModel.pt",
+    "model_confidence": 0.35,
+    "frame_skip_interval": 1,
+    "use_cuda": true
+  }
+}

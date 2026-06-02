@@ -1,0 +1,83 @@
+{
+  "store_info": {
+    "store_name": "STORE_NAME",
+    "client_code": "CLIENT_CODE",
+    "company_id": "COMPANY_ID",
+    "store_id": "STORE_ID"
+  },
+  "cameras": [
+    {
+      "camera_id": "CAMERA_ID",
+      "camera_name": "Camera Name",
+      "rtsp_url": "rtsp://admin:PASSWORD@IP_ADDRESS:PORT",
+      "enabled": true,
+      "roi": {
+        "start_width": 0.1,
+        "end_width": 0.9,
+        "start_height": 0.2,
+        "end_height": 0.8
+      },
+      "door_detection": {
+        "door_sx_ratio": 0.0,
+        "door_ex_ratio": 1.0,
+        "door_sy_ratio": 0.5,
+        "door_ey_ratio": 0.8,
+        "threshold_open_door": 50,
+        "threshold_opened_pixels": 500,
+        "check_door_duration": 1,
+        "invert_door_threshold": false
+      },
+      "recording": {
+        "incoming_duration": 4,
+        "video_fps": 40.0,
+        "video_codec": "XVID"
+      }
+    }
+  ],
+  "processing": {
+    "yolo_model_path": "FinalModel.pt",
+    "model_confidence": 0.35,
+    "frame_skip_interval": 1,
+    "max_frame_buffer_size": 100,
+    "use_cuda": true,
+    "tracker_type": "botsort.yaml",
+    "invert_direction": false,
+    "enable_direction_filter": false
+  },
+  "deduplication": {
+    "enable_hash_dedup": true,
+    "hash_similarity_threshold": 95,
+    "enable_face_dedup": false,
+    "face_similarity_threshold": 0.6,
+    "enable_temporal_dedup": false,
+    "temporal_window_seconds": 10
+  },
+  "face_detection": {
+    "use_deepface": false,
+    "deepface_backend": "retinaface",
+    "use_haarcascade": false,
+    "haarcascade_path": "haarcascade_frontalface_default.xml",
+    "api_url": "http://192.168.3.106:5000/analyze",
+    "api_timeout": 10,
+    "require_face_for_upload": false
+  },
+  "image_processing": {
+    "resize_width": 200,
+    "resize_height": 400,
+    "output_folder": "image-output",
+    "video_folder": "video",
+    "backup_folder": "image_backup",
+    "backup_retention_days": 30
+  },
+  "api": {
+    "camera_status_interval": 600,
+    "upload_retry_attempts": 3,
+    "upload_retry_delay": 2,
+    "processing_sleep_interval": 1
+  },
+  "logging": {
+    "log_file": "log.txt",
+    "log_backup_file": "log_backup.txt",
+    "log_level": "INFO"
+  }
+}
