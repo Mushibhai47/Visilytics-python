@@ -100,5 +100,5 @@ python live_detection_aws.py config_storename_cam1.json
 ## Developer
 
 **Musharaf Shah** — Software Systems Engineer  
-shahzeb3303@gmail.com  
+musharafshah476@gmail.com  
 Sept 2024 – Present
