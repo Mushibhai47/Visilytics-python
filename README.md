@@ -529,7 +529,7 @@ If a frame read fails the capture is released and re-opened automatically. If an
 
 **Musharaf Shah** — Software Systems Engineer<br/>
 📧 musharafshah476@gmail.com<br/>
-🗓️ Sept 2024 – Present
+🗓️ Sept 2025 – May 2026
 
 <div align="center">
 <sub>Built with Python · YOLOv8 · OpenCV · AWS Rekognition</sub>
