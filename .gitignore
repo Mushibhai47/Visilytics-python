@@ -48,3 +48,7 @@ live_detection_v32.py
 person_tracker_v2.py
 processing_handler_v2.py
 *.py.bak
+
+# Documentation images (faces blurred / illustrative only - never commit raw footage)
+!docs/images/
+!docs/images/*.png
